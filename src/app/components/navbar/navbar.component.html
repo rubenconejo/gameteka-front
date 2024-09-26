@@ -1,0 +1,33 @@
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <strong>Mi App de Juegos</strong>
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic" (click)="toggleNavbar()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasic" [class.is-active]="navbarOpen" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/dashboard">Inicio</a>
+        <a class="navbar-item" routerLink="/users">Usuarios</a>
+        <a class="navbar-item" routerLink="games">Juegos</a>
+        <a class="navbar-item" routerLink="/library">Mi Biblioteca</a>
+        <a class="navbar-item" routerLink="/añadir-juego">Añadir Juego</a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light" routerLink="/perfil">Mi Perfil</a>
+            <a class="button is-danger" routerLink="/logout">Cerrar Sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
+  

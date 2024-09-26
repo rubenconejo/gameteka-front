@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">Lista de Usuarios</h1>
+    <div class="box">
+      <ul>
+        <li *ngFor="let user of users" class="notification is-primary">
+          <strong>{{ user.nombre }}</strong> - {{ user.email }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

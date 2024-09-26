@@ -1,0 +1,25 @@
+<section class="section">
+    <div class="container">
+      <h1 class="title">Iniciar Sesión</h1>
+      <form (ngSubmit)="onLogin()">
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" [(ngModel)]="email" name="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Contraseña</label>
+          <div class="control">
+            <input class="input" type="password" [(ngModel)]="password" name="password" required>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary" type="submit">Iniciar Sesión</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</section>
+  
